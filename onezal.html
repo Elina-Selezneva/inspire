@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Elastic Image Slideshow with Thumbnail Preview" />
+    <meta name="keywords" content="jquery, css3, responsive, image, slider, slideshow, thumbnails, preview, elastic" />
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <script src="https://use.fontawesome.com/4b2b3c4e4b.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="top">
+        <div class="topikons">
+            <div class="inikon">
+                <a href="" class="topa">
+                    <div><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                </a>
+                <a href="" class="topa">
+                    <div><i class="fa fa-vk" aria-hidden="true"></i></div>
+                </a>
+            </div>
+        </div>
+        <a href="index.html" class="toplogo">
+            <div><img src="logo.jpg" alt="">
+                <p>Фотостудия для всех</p>
+            </div>
+        </a>
+        <div class="topnumer"><span>8 (812) 887-87-87 <br> Лиговский пр. 85 <br>5 мин от метро "Прощадь Восстания"</span></div>
+        <div class="topikons_2">
+            <div class="inikon">
+                <a href="" class="topa">
+                    <div><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                </a>
+                <a href="" class="topa">
+                    <div><i class="fa fa-vk" aria-hidden="true"></i></div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <hr class="tophr">
+    <div id="menu">
+        <ul id="Menu">
+            <!-- все меню -->
+            <li class="point menuline"><a href="#">О НАС</a></li>
+            <!-- главный пункт меню -->
+            <li class="point"><a href="#">АРЕНДА</a>
+                <!-- drop menu - start -->
+                <div class="drop">
+                    <!-- выпыдыющее меню -->
+                    <ul>
+                        <li><a href="#">Прайс</a></li>
+                        <li><a href="#">Расписание</a></li>
+                        <!-- пункт выпадающего меню -->
+                        <a href="zals.html">
+                            <li>Залы</li>
+                        </a>
+                        <li><a href="#">Гримерные</a></li>
+                    </ul>
+                </div>
+                <!-- drop menu - end -->
+            </li>
+            <li class="point"><a href="#">ФОТОСЕССИИ</a>
+                <div class="drop">
+                    <!-- выпыдыющее меню -->
+                    <ul>
+                        <li><a href="#">Новогодние</a></li>
+                        <li><a href="#">Индивидуальные</a></li>
+                        <!-- пункт выпадающего меню -->
+                        <li><a href="#">Семейные</a></li>
+                        <li><a href="#">Love Story</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="point menuline bgw"><a href="#">ПРАВИЛА</a></li>
+            <li class="point menuline bgw"><a href="#">ЗАПИСАТЬСЯ</a></li>
+        </ul>
+    </div>
+    <div class="mobile-navigaror">
+        <div class="menu-burger__header">
+            <span></span>
+        </div>
+        <nav class="header__nav">
+            <ul class="menu header__menu">
+                <li><a href="" class="menu__item">О нас</a></li>
+                <li><a class="menu__item">Аренда:</a>
+                    <ul class="menu arendamenu">
+                        <li><a href="#" class="menu__item "><i class="fa fa-square bmenuikon" aria-hidden="true"></i>Прайс</a></li>
+                        <li><a href="#" class="menu__item "><i class="fa fa-square bmenuikon" aria-hidden="true"></i>Расписание</a></li>
+                        <a href="zals.html" class="menu__item ">
+                            <li><i class="fa fa-square bmenuikon" aria-hidden="true"></i>Залы</li>
+                        </a>
+                        <li><a href="#" class="menu__item "><i class="fa fa-square bmenuikon" aria-hidden="true"></i>Гримерные</a></li>
+                    </ul>
+                </li>
+                <li><a href="" class="menu__item">Фотосессии</a></li>
+                <li><a href="" class="menu__item">Правила</a></li>
+                <li><a href="" class="menu__item">Записаться</a></li>
+            </ul>
+        </nav>
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.eislideshow.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('.menu-burger__header').click(function() {
+                $('.menu-burger__header').toggleClass('open-menu');
+                $('.header__nav').toggleClass('open-menu');
+                $('.fon-blac').toggleClass('open-menu');
+            });
+        });
+    </script>
+    <div class="onezaltitle">Мастерская Деда Мороза</div>
+    <div class="linechoszal"><img src="zal/line.png" alt=""></div>
+    <div id="block-contain">
+        <div class="block" style="height:250px;">
+            <div class="inner setka1" style="background:url(master/master.jpg) no-repeat; background-size: cover; background-position: center;"></div>
+        </div>
+        <div class="block" style="height:220px;">
+            <div class="inner" style="background:url(master/master5.jpg) no-repeat; background-size: cover; background-position: center;"></div>
+        </div>
+        <div class="block" style="height:350px;">
+            <div class="inner" style="background:url(master/master2.jpg) no-repeat; background-size: cover; background-position: center;"></div>
+        </div>
+        <div class="block" style="height:480px;">
+            <div class="inner" style="background:url(master/master3.jpg) no-repeat; background-size: cover; background-position: center;"></div>
+        </div>
+        <div class="block" style="height:320px;">
+            <div class="inner" style="background:url(master/master4.jpg) no-repeat; background-size: cover; background-position: center;"></div>
+        </div>
+        <div class="block" style="height:350px;">
+            <div class="inner" style="background:url(master/master1.jpg) no-repeat; background-size: cover; background-position: center;"></div>
+        </div>
+        <div class="block" style="height:230px;">
+            <div class="inner" style="background:url(master/master6.jpg) no-repeat; background-size: cover; background-position: center;"></div>
+        </div>
+        <div class="block setka8" style="height:200px;">
+            <div class="inner" style="background:url(master/master7.jpg) no-repeat; background-size: cover; background-position: center;"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.eislideshow.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript">
+    </script>
+    <div class="contzala">
+        <div class="img_onez m_zimg"><img src="master/master.jpg" alt=""></div>
+        <div class="img_onez m_zimg"><img src="master/master2.jpg" alt=""></div>
+        <div class="img_onez h_zimg"><img src="master/master1.jpg" alt=""></div>
+        <div class="img_onez h_zimg"><img src="master/master6.jpg" alt=""></div>
+        <div class="img_onez m_zimg"><img src="master/master4.jpg" alt=""></div>
+        <div class="img_onez m_zimg"><img src="master/master5.jpg" alt=""></div>
+        <div class="img_onez h_zimg"><img src="master/master8.jpg" alt=""></div>
+        <div class="img_onez h_zimg"><img src="master/master7.jpg" alt=""></div>
+    </div>
+    <div class="opiszala_title">Описание Зала:</div>
+    <div class="linechoszal"><img src="zal/line.png" alt=""></div>
+    <div class="opiszala_text">Площадь зала составляет 40 кв.м.,
+        Окно во всю стену на северной стороне.
+        <br>
+        <br>
+        Зал «Мастерская» — место, которого так не хватает жителям большого города. Маленький уютный дом-мастреская, где все так напоминает о детстве, пахнет уютом и располагает к душевным семейным вечерам за настольными играми или приготовлением рождественского печенья и подарков.
+        Подойдет для новогодних, индивидуальных, семейных, love story фотосессий.
+        <br>
+        <br>
+        Оборудование в зале:
+        — два источника Profoto;
+        — синхронизатор.
+    </div>
+    <button class="butlookmore but_opiszala">Записаться</button>
+    <!--    начало консультации-->
+    <div class="haveconsult">
+        <div class="fon_consult"></div>
+        <div class="blok_unopacity">
+            <div class="title_consult">
+                <h1>Получить Консультацию</h1>
+            </div>
+            <div class="textconsul">Перезвоним или ответим на Вашe письмо в течении 10 мин, ежедневно с 10 до 20 чacoв.</div>
+            <div class="input_consult"> <input placeholder="Имя" type="text" name="name" value="" /></div>
+            <div class="input_consult">
+                <input placeholder="+7 (XXX) XXX-XX-XX" type="numbers" name="call" value="" />
+            </div>
+            <div class="input_consult"><input placeholder="name@email.ru" type="text" name="username" value="" /></div>
+            <form class="otpr_consult"><input type="button" value="Отправить"></form>
+        </div>
+
+    </div>
+    <!--    конец консультации-->
+    <hr>
+    <div class="footer">
+        <div class="footext">2017-2020 OOO.Insire</div>
+        <div class="footinikon">
+            <a href="" class="topa">
+                <div><i class="fa fa-instagram" aria-hidden="true"></i></div>
+            </a>
+            <a href="" class="topa">
+                <div><i class="fa fa-vk" aria-hidden="true"></i></div>
+            </a>
+        </div>
+    </div>
+</body></html>

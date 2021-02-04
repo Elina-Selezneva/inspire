@@ -1,0 +1,128 @@
+/* ------ general
+-----------------------------------------------*/
+
+
+.slider {
+    float: left;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url(../gfx/bottom_shadow.png) no-repeat bottom center;
+}
+
+.sliderContent {
+    float: left;
+    width: 100%;
+    height: 100%;
+    clear: both;
+    position: relative;
+    overflow: hidden;
+}
+
+.sliderArrows a {
+    display: block;
+    text-indent: -9999px;
+    outline: none;
+    z-index: 50;
+    background-image: url(../gfx/prev_next.png);
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    top: 50%;
+    margin-top: -34px;
+}
+
+.prev {
+    background-position: 0 0;
+    left: 15px;
+}
+
+.prev:hover {
+    background-position: 0 -44px;
+}
+
+.next {
+    right: 15px;
+    background-position: -44px 0;
+}
+
+.next:hover {
+    background-position: -44px -44px;
+}
+
+.sliderContent .item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+.sliderBullets {
+    position: absolute;
+    bottom: 5px;
+    left: 38%;
+    z-index: 50;
+    margin-left: -45px;
+}
+
+.sliderBullets a {
+    display: block;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+    outline: none;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+
+.sliderBullets .active {
+    background-position: 0 -11px;
+    background: rgba(255, 255, 255, 1);
+}
+
+.sliderContent a {
+    outline: none;
+}
+
+.item img {
+    border: none;
+    width: 100%;
+}
+
+@media screen and (max-width: 922px) {
+    .sliderBullets {
+        bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .sliderBullets {
+        bottom: 33px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sliderBullets {
+        bottom: 13px;
+        left: 40%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sliderBullets {
+        display: none;
+    }
+
+    .galries {
+        height: 225px;
+    }
+}
+
+@media screen and (max-width: 413px) {
+    .galries {
+        height: 225px;
+    }
+}

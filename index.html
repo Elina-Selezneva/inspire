@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <meta name="description" content="Elastic Image Slideshow with Thumbnail Preview" />
+    <meta name="keywords" content="jquery, css3, responsive, image, slider, slideshow, thumbnails, preview, elastic" />
+    <meta name="author" content="Codrops" />
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <script src="https://use.fontawesome.com/4b2b3c4e4b.js"></script>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="icon" href="favicon.ico">
+    <!--    <link rel="stylesheet" type="text/css" href="css/demo.css" />-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet' type='text/css' />
+    <noscript>
+        <link rel="stylesheet" type="text/css" href="css/noscript.css" />
+    </noscript>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="top">
+        <div class="topikons">
+            <div class="inikon">
+                <a href="" class="topa">
+                    <div><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                </a>
+                <a href="" class="topa">
+                    <div><i class="fa fa-vk" aria-hidden="true"></i></div>
+                </a>
+            </div>
+        </div>
+        <a href="index.html" class="toplogo">
+            <div><img src="logo.jpg" alt="">
+                <p>Фотостудия для всех</p>
+            </div>
+        </a>
+        <div class="topnumer"><span>8 (812) 887-87-87 <br> Лиговский пр. 85 <br>5 мин от метро "Прощадь Восстания"</span></div>
+        <div class="topikons_2">
+            <div class="inikon">
+                <a href="" class="topa">
+                    <div><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                </a>
+                <a href="" class="topa">
+                    <div><i class="fa fa-vk" aria-hidden="true"></i></div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <hr class="tophr">
+    <div id="menu">
+        <ul id="Menu">
+            <!-- все меню -->
+            <li class="point menuline"><a href="#">О НАС</a></li>
+            <!-- главный пункт меню -->
+            <li class="point"><a href="#">АРЕНДА</a>
+                <!-- drop menu - start -->
+                <div class="drop">
+                    <!-- выпыдыющее меню -->
+                    <ul>
+                        <li><a href="#">Прайс</a></li>
+                        <li><a href="#">Расписание</a></li>
+                        <!-- пункт выпадающего меню -->
+                        <a href="zals.html">
+                            <li>Залы</li>
+                        </a>
+                        <li><a href="#">Гримерные</a></li>
+                    </ul>
+                </div>
+                <!-- drop menu - end -->
+            </li>
+            <li class="point"><a href="#">ФОТОСЕССИИ</a>
+                <div class="drop">
+                    <!-- выпыдыющее меню -->
+                    <ul>
+                        <li><a href="#">Новогодние</a></li>
+                        <li><a href="#">Индивидуальные</a></li>
+                        <!-- пункт выпадающего меню -->
+                        <li><a href="#">Семейные</a></li>
+                        <li><a href="#">Love Story</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="point menuline bgw"><a href="#">ПРАВИЛА</a></li>
+            <li class="point menuline bgw"><a href="#">ЗАПИСАТЬСЯ</a></li>
+        </ul>
+    </div>
+    <div class="mobile-navigaror">
+        <div class="menu-burger__header">
+            <span></span>
+        </div>
+        <nav class="header__nav">
+            <ul class="menu header__menu">
+                <li><a href="" class="menu__item">О нас</a></li>
+                <li><a class="menu__item">Аренда:</a>
+                    <ul class="menu arendamenu">
+                        <li><a href="#" class="menu__item "><i class="fa fa-square bmenuikon" aria-hidden="true"></i>Прайс</a></li>
+                        <li><a href="#" class="menu__item "><i class="fa fa-square bmenuikon" aria-hidden="true"></i>Расписание</a></li>
+                        <a href="zals.html" class="menu__item ">
+                            <li><i class="fa fa-square bmenuikon" aria-hidden="true"></i>Залы</li>
+                        </a>
+                        <a href="zals.html" class="menu__item ">
+                            <li><i class="fa fa-square bmenuikon" aria-hidden="true"></i>Гримерные</li>
+                        </a>
+                    </ul>
+                </li>
+                <li><a href="" class="menu__item">Фотосессии</a></li>
+                <li><a href="" class="menu__item">Правила</a></li>
+                <li><a href="" class="menu__item">Записаться</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="fon-blac"></div>
+    <div class="container">
+        <div class="wrapper">
+            <div id="ei-slider" class="ei-slider">
+                <ul class="ei-slider-large">
+                    <li>
+                        <img src="images/large/6.jpg" alt="image06" />
+
+                    </li>
+                    <li>
+                        <img src="images/large/1.jpg" alt="image01" />
+
+                    </li>
+                    <li>
+                        <img src="images/large/2.jpg" alt="image02" />
+
+                    </li>
+                    <li>
+                        <img src="images/large/3.jpg" alt="image03" />
+
+                    </li>
+                    <li>
+                        <img src="images/large/4.jpg" alt="image04" />
+
+                    </li>
+                    <li>
+                        <img src="images/large/5.jpg" alt="image05" />
+                    </li>
+                    <li>
+                        <img src="images/large/7.jpg" alt="image07" />
+
+                    </li>
+                </ul><!-- ei-slider-large -->
+                <ul class="ei-slider-thumbs">
+                    <li class="ei-slider-element">Current</li>
+                    <li><a href="#">Slide 6</a><img src="" alt="thumb06" /></li>
+                    <li><a href="#">Slide 1</a><img src="" alt="thumb01" /></li>
+                    <li><a href="#">Slide 2</a><img src="" alt="thumb02" /></li>
+                    <li><a href="#">Slide 3</a><img src="" alt="thumb03" /></li>
+                    <li><a href="#">Slide 4</a><img src="" alt="thumb04" /></li>
+                    <li><a href="#">Slide 5</a><img src="" alt="thumb05" /></li>
+                    <li><a href="#">Slide 7</a><img src="" alt="thumb07" /></li>
+                </ul><!-- ei-slider-thumbs -->
+            </div><!-- ei-slider -->
+        </div><!-- wrapper -->
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.eislideshow.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('#ei-slider').eislideshow({
+                animation: 'center',
+                autoplay: true,
+                slideshow_interval: 3000,
+                titlesFactor: 0
+            });
+        });
+    </script>
+    <p class="findzal">Выберите зал <br>для своей истории!</p>
+    <div class="conteiner">
+        <div class="zal">
+            <a href="">
+                <div class="fotozal"><img src="izum/izum.jpg" alt=""></div>
+                <div class="namezala">Изумрудная сказка <p>1100p</p>
+                </div>
+            </a>
+        </div>
+        <div class="zal">
+            <a href="">
+                <div class="fotozal"><img src="hels/hels.jpg" alt=""></div>
+                <div class="namezala">Новогодние сноведения <p>1100p</p>
+                </div>
+            </a>
+        </div>
+        <div class="zal">
+            <a href="">
+                <div class="fotozal"><img src="warm/warm.jpg" alt=""></div>
+                <div class="namezala">Зимняя хижина <p>1100p</p>
+                </div>
+            </a>
+        </div>
+        <div class="zal">
+            <a href="onezal.html">
+                <div class="fotozal"><img src="master/master.jpg" alt=""></div>
+                <div class="namezala">Мастерская Деда Мороза <p>1100p</p>
+                </div>
+            </a>
+        </div>
+        <div class="zal">
+            <a href="">
+                <div class="fotozal"><img src="lond/london.jpg" alt=""></div>
+                <div class="namezala">Warm Night <p>1100p</p>
+                </div>
+            </a>
+        </div>
+        <div class="zal">
+            <a href="">
+                <div class="fotozal"><img src="wsnow/wsnow.jpg" alt=""></div>
+                <div class="namezala">White Snow <p>1100p</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <a href="zals.html"><button class="butlookmore">Смотреть Все!</button></a>
+    <div class="akzii">
+        <h1>Акции</h1>
+        <hr>Мы готовы радовать Вас в любое время!
+    </div>
+    <div class="akziicontener">
+        <div class="akziiblock">
+            <div class="akfoto af1"></div>
+            <div class="akzname">Индивидуальная <br><span class="oldprice">7500p</span> 6500p</div>
+            <div class="akzul">
+                <ul>
+                    <li class="akzli"><img src="akzii/ikonfoto.png" alt=""><span>Время:</span> 1 час</li>
+                    <li class="akzli"><img src="akzii/ikonfoto.png" alt=""><span>Количество образов:</span> 2 образа</li>
+                    <li class="akzli"><img src="akzii/ikonfoto.png" alt=""><span>Интерьер</span>1 зал</li>
+                    <li class="akzli"><img src="akzii/ikonfoto.png" alt=""><span>Макияж и укладка от визажиста</span></li>
+                    <li class="akzli"><img src="akzii/ikonfoto.png" alt=""><span>Обработанных фото: 30 снимков</span></li>
+                    <li class="akzli"><img src="akzii/ikonfoto.png" alt=""><span>10 напечатанных фото</span></li>
+                </ul>
+            </div>
+            <a href="#" class="fancy-btn">Записаться</a>
+        </div>
+        <div class="akziiblock">
+            <div class="akfoto af2"></div>
+            <div class="akzname">Будущая мама <br><span class="oldprice">8000p</span> 7500p</div>
+            <div class="akzul">
+                <ul>
+                    <li class="akzli"><img src="akzii/ikonfoto.png" alt=""><span>Время:</span> 1.5 часа</li>
+                    <li class="akzli"><img src="akzii/ikonfoto.png" alt=""><span>Количество образов:</span> 3 образа</li>
+                    <li class="akzli"><img src="akzii/ikonfoto.png" alt=""><span>Интерьер</span>1 зал</li>
+                    <li class="akzli"><img src="akzii/ikonfoto.png" alt=""><span>Макияж и укладка от визажиста</span></li>
+                    <li class="akzli"><img src="akzii/ikonfoto.png" alt=""><span>Обработанных фото: 30 снимков</span></li>
+                    <li class="akzli"><img src="akzii/ikonfoto.png" alt=""><span>10 напечатанных фото</span></li>
+                </ul>
+            </div>
+            <a href="#" class="fancy-btn">Записаться</a>
+        </div>
+        <div class="akziiblock">
+            <div class="akfoto af3"></div>
+            <div class="akzname">Семейная (до 5 человек) <br><span class="oldprice">13900p</span> 11900p</div>
+            <div class="akzul">
+                <ul>
+                    <li class="akzli"><img src="akzii/ikonfoto.png" alt=""><span>Время:</span>2 час</li>
+                    <li class="akzli"><img src="akzii/ikonfoto.png" alt=""><span>Количество образов:</span> 2 образа</li>
+                    <li class="akzli"><img src="akzii/ikonfoto.png" alt=""><span>Интерьер</span> 2 зала</li>
+                    <li class="akzli"><img src="akzii/ikonfoto.png" alt=""><span>Макияж и укладка от визажиста</span></li>
+                    <li class="akzli"><img src="akzii/ikonfoto.png" alt=""><span>Обработанных фото: 50 снимков</span></li>
+                    <li class="akzli"><img src="akzii/ikonfoto.png" alt=""><span>20 напечатанных фото</span></li>
+                </ul>
+            </div>
+            <a href="#" class="fancy-btn">Записаться</a>
+        </div>
+    </div>
+    <hr>
+    <div class="footer">
+        <div class="footext">2017-2020 OOO.Insire</div>
+        <div class="footinikon">
+            <a href="" class="topa">
+                <div><i class="fa fa-instagram" aria-hidden="true"></i></div>
+            </a>
+            <a href="" class="topa">
+                <div><i class="fa fa-vk" aria-hidden="true"></i></div>
+            </a>
+        </div>
+    </div>
+</body></html>
